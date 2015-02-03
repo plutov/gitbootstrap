@@ -78,3 +78,5 @@
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	unassumeall = !git assumed | xargs git update-index --no-assume-unchanged
 
+	subup = submodule update --init
+
