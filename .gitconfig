@@ -1,0 +1,74 @@
+[user]
+	name = Sasha Plutov
+	email = a@plutov.by
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[color]
+	ui = auto
+	interactive = auto
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = alexander.plutov@gmail.com
+	smtppass =
+	smtpserverport = 587
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[github]
+	user = plutov
+	token =
+[alias]
+	a = add --all
+	ap = apply
+	b = branch
+	c = commit
+	cm = commit -m
+	d = diff
+	dc = diff --cached
+	f = fetch
+	fo = fetch origin
+	m = merge
+	co = checkout
+	ps = push
+	pso = push origin
+	pl = pull
+	plo = pull origin
+	plom = pull origin master
+	prb = pull --rebase
+	prbo = pull --rebase origin
+	rb = rebase
+	re = reset
+	reh = reset --hard
+	r = remote
+	s = status
+	sa = stash apply
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+
+	l = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+
+	assume = update-index --assume-unchanged
+	unassume = update-index --no-assume-unchanged
+
+	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+	unassumeall = !git assumed | xargs git update-index --no-assume-unchanged
+
