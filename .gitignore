@@ -1,0 +1,68 @@
+# JetBrains
+.idea
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# Eclipse Core
+.project
+
+# Symfony2
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Composer PHAR
+/composer.phar
+
+# Backups
+*.bak
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Tortoise
+/.tgitconfig
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Go
+_obj
+_test
+ 
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ 
+# Logs
+*.log
+ 
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
