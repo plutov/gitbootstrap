@@ -1,6 +1,6 @@
 [user]
-	name = Sasha Plutov
-	email = a@plutov.by
+	name =
+	email =
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim
@@ -33,7 +33,7 @@
 [difftool]
 	prompt = false
 [github]
-	user = plutov
+	user =
 	token =
 [alias]
 	a = add --all
