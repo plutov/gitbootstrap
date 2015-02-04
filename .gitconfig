@@ -1,6 +1,9 @@
 [user]
     name =
     email =
+[github]
+    #user = GITHUB_USERNAME
+    #token = GITHUB_TOKEN - https://github.com/settings/applications
 [core]
     excludesfile = ~/.gitignore
     editor = vim
@@ -11,6 +14,12 @@
     insteadOf = gist:
 [url "https://bitbucket.org/"]
     insteadOf = bb:
+[sendemail]
+    #smtpencryption = tls
+    #smtpserver = smtp.gmail.com
+    #smtpuser = YOUR_EMAIL
+    #smtppass = YOUR_PASSWORD
+    #smtpserverport = 587
 [color]
     ui = auto
     interactive = auto
@@ -32,9 +41,10 @@
     tool = vimdiff
 [difftool]
     prompt = false
-[github]
-    user =
-    token =
+[branch "master"]
+    rebase = true
+[branch]
+    autosetuprebase = always
 [alias]
     a = add --all
     ap = apply
