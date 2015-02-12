@@ -51,6 +51,7 @@
     b = branch
     c = commit
     cm = commit -m
+    cma = commit --amend
     d = diff
     dc = diff --cached
     f = fetch
@@ -62,11 +63,12 @@
     pl = pull
     plo = pull origin
     plom = pull origin master
-    prb = pull --rebase
-    prbo = pull --rebase origin
+    plrb = pull --rebase
+    plrbo = pull --rebase origin
     rb = rebase
     re = reset
     reh = reset --hard
+    reho = reset --hard remotes/origin/HEAD
     r = remote
     s = status
     sa = stash apply
