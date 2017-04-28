@@ -14,12 +14,6 @@
     insteadOf = gist:
 [url "https://bitbucket.org/"]
     insteadOf = bb:
-[sendemail]
-    #smtpencryption = tls
-    #smtpserver = smtp.gmail.com
-    #smtpuser = YOUR_EMAIL
-    #smtppass = YOUR_PASSWORD
-    #smtpserverport = 587
 [color]
     ui = auto
     interactive = auto
@@ -86,4 +80,3 @@
     unassumeall = !git assumed | xargs git update-index --no-assume-unchanged
 
     subup = submodule update --init
-
